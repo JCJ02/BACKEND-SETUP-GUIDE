@@ -24,8 +24,7 @@ Running npm init -y generates a package.json file, which serves as the project's
 The package.json file is essential for managing the dependencies and scripts required to build and run your project.
 
 ### Step 3. Install Dependencies
-#### What’s happening?
-- This installs the core dependencies required for your project to function. Here’s what each dependency does:
+#### What’s happening? This installs the core dependencies required for your project to function. Here’s what each dependency does:
   
 - **express**: A web framework for building RESTful APIs.
 - **cors**: Middleware for handling Cross-Origin Resource Sharing.
