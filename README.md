@@ -13,6 +13,8 @@ Learn more about the following technologies:
 #### Why?
 Organizing your project into a dedicated folder ensures all related files and configurations are in one place, making it easier to manage.
 
+
+
 ### Step 2. Initialize NPM
 - Open your terminal and type `npm init -y` to initialize the package.json file:
 ```console
@@ -22,6 +24,8 @@ npm init -y
 Running npm init -y generates a package.json file, which serves as the project's metadata file. It lists your dependencies, scripts, and other project configurations.
 #### Why?
 The package.json file is essential for managing the dependencies and scripts required to build and run your project.
+
+
 
 ### Step 3. Install Dependencies
 #### What’s happening? This installs the core dependencies required for your project to function. Here’s what each dependency does:
@@ -44,6 +48,8 @@ These libraries provide the functionality needed for tasks like database interac
 npm install express cors dotenv bcryptjs zod jsonwebtoken crypto-js swagger-ui-express swagger-jsdoc nodemailer ejs @prisma/client
 ```
 
+
+
 ### Step 4. Install Development Dependencies
 ```console
 npm install typescript ts-node @types/node @types/express @types/cors @types/bcryptjs @types/jsonwebtoken @types/crypto-js @types/nodemailer @types/ejs @types/swagger-ui-express @types/swagger-jsdoc prisma --save-dev
@@ -53,6 +59,8 @@ Development dependencies are tools and types that assist in development but are 
 
 #### Why?
 TypeScript improves code quality by enforcing static typing. The type definitions (e.g., @types/node) allow you to use TypeScript effectively with Node.js and other libraries.
+
+
 
 ### Step 5. Initialize TypeScript
 ```console
@@ -64,7 +72,10 @@ The npx tsc --init command generates a tsconfig.json file, which configures the 
 #### Why?
 This step sets up TypeScript in your project and allows you to customize settings like target JavaScript version, module resolution, and more.
 
-### Step 6. Initialize Prisma
+
+
+### Step 6. Initialize Prisma with Data Source Provider. 
+You can choose between PostgreSQL, MySQL, and MongoDB:
 ```console
 npx prisma init --datasource-provider postgresql
 ```
@@ -82,6 +93,8 @@ The npx prisma init command creates a Prisma configuration file (prisma/schema.p
 #### Why?
 Prisma uses this schema file to map your database structure and interact with it programmatically.
 
+
+
 ### Step 7. Prisma Migration
 ```console
 npx prisma migrate dev --name init
@@ -98,6 +111,8 @@ npx prisma migrate dev
 
 #### Why?
 Migrations ensure your database schema is up-to-date and synchronized with your application code.
+
+
 
 ### Step 8. Prisma Studio
 ```console
