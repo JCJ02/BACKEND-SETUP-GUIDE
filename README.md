@@ -29,7 +29,6 @@ The package.json file is essential for managing the dependencies and scripts req
 - **express**: A web framework for building RESTful APIs.
 - **cors**: Middleware for handling Cross-Origin Resource Sharing.
 - **dotenv**: For loading environment variables from .env files.
-- **pg**: PostgreSQL client for Node.js.
 - **bcryptjs**: Library for hashing passwords.
 - **zod**: A schema validation library for TypeScript.
 - **jsonwebtoken**: For creating and verifying JSON Web Tokens (JWTs).
@@ -42,7 +41,7 @@ The package.json file is essential for managing the dependencies and scripts req
 #### Why?
 These libraries provide the functionality needed for tasks like database interactions, user authentication, and API documentation.
 ```console
-npm install express cors dotenv pg bcryptjs zod jsonwebtoken crypto-js swagger-ui-express swagger-jsdoc nodemailer ejs @prisma/client
+npm install express cors dotenv bcryptjs zod jsonwebtoken crypto-js swagger-ui-express swagger-jsdoc nodemailer ejs @prisma/client
 ```
 
 ### Step 4. Install Development Dependencies
@@ -69,6 +68,14 @@ This step sets up TypeScript in your project and allows you to customize setting
 ```console
 npx prisma init --datasource-provider postgresql
 ```
+or
+```console
+npx prisma init --datasource-provider mysql
+```
+or
+```console
+npx prisma init --datasource-provider mongodb
+```
 #### What’s happening?
 The npx prisma init command creates a Prisma configuration file (prisma/schema.prisma) and a .env file for database connection settings.
 
@@ -86,7 +93,7 @@ and then
 npx prisma migrate dev
 ```
 #### What’s happening?
-- npx prisma init --datasource-provider postgresql: Reiterates the setup for a PostgreSQL datasource.
+- npx prisma migrate dev --name init: Initialize migration name.
 - npx prisma migrate dev: Creates and applies database migrations based on your Prisma schema.
 
 #### Why?
