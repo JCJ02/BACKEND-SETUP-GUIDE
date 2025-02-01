@@ -77,7 +77,7 @@ Prisma uses this schema file to map your database structure and interact with it
 
 ### Step 7. Prisma Migration
 ```console
-npx prisma init --datasource-provider postgresql
+npx prisma migrate dev --name init
 ```
 
 and then
