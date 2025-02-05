@@ -86,8 +86,7 @@ Prisma uses this schema file to map your database structure and interact with it
 ```console
 npx prisma migrate dev --name init
 ```
-
-and then,
+After initializing your Prisma Schama, you can now create your database schema and then,
 
 ```console
 npx prisma migrate dev
