@@ -6,7 +6,7 @@ Learn more about the following technologies:
 
 ## Get Started:
 ### Step 1: You have to download the latest version of Python!
-- [Download Latest Version of Python](https://www.python.org/downloads/)
+- [Download the Latest Version of Python](https://www.python.org/downloads/)
 
 ### Step 2: Install it!
 
@@ -22,3 +22,14 @@ C:\Users\<YourUsername>\AppData\Roaming\Python\PythonXX\Scripts\
 ```
 
 - Click <strong>OK</strong> to save the changes.
+
+## Create Project Directory
+- Name it whatever you want, for ex. `fastapi`.
+Organizing your project into a dedicated folder ensures all related files and configurations are in one place, making it easier to manage.
+
+## Open it on Visual Studio Code Software
+- Open your terminal and type `pip install "fastapi[standard]` and `pip install uvicorn` to initialize the package.json file:
+```console
+pip install "fastapi[standard]
+pip install uvicorn
+```
