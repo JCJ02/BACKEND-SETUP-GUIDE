@@ -42,13 +42,13 @@ This installs the core dependencies required for your project to function. Hereâ
 These libraries provide the functionality needed for tasks like database interactions, user authentication, and API documentation.
 
 ```console
-npm install express cors dotenv bcryptjs zod jsonwebtoken crypto-js swagger-ui-express swagger-jsdoc nodemailer ejs @prisma/client
+npm install express cors dotenv bcryptjs zod jsonwebtoken crypto-js swagger-ui-express swagger-jsdoc nodemailer ejs date-fns @prisma/client
 ```
 
 
 ### Step 4. Install Development Dependencies
 ```console
-npm install typescript ts-node @types/node @types/express @types/cors @types/bcryptjs @types/jsonwebtoken @types/crypto-js @types/nodemailer @types/ejs @types/swagger-ui-express @types/swagger-jsdoc prisma --save-dev
+npm install typescript ts-node @types/node @types/express @types/cors @types/bcryptjs @types/jsonwebtoken @types/crypto-js @types/nodemailer @types/ejs @types/date-fns @types/swagger-ui-express @types/swagger-jsdoc prisma --save-dev
 ```
 Development dependencies are tools and types that assist in development but are not required in production. This includes TypeScript-related tools and type definitions for installed libraries.
 
