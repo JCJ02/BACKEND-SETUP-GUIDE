@@ -30,6 +30,6 @@ Organizing your project into a dedicated folder ensures all related files and co
 ## Open it on Visual Studio Code Software
 - Open your terminal and type `pip install "fastapi[standard]` and `pip install uvicorn` to initialize the package.json file:
 ```console
-pip install "fastapi[standard]
+pip install "fastapi[standard]"
 pip install uvicorn
 ```
