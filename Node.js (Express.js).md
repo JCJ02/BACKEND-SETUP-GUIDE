@@ -1,4 +1,4 @@
-# How to Setup Backend - Node.js (Express.js) with TypeScript and Prisma using PostgreSQL
+# How to Setup Backend - Node.js (Express.js) with TypeScript and Prisma using PostgreSQL, MySQL or MongoDB
 
 Learn more about the following technologies:
 - [Postgres SQL](https://www.postgresql.org/docs/current/)
