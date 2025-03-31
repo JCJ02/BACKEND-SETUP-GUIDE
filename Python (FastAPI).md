@@ -33,3 +33,8 @@ Organizing your project into a dedicated folder ensures all related files and co
 pip install "fastapi[standard]"
 pip install uvicorn
 ```
+
+## Install Packages
+```console
+pip install psycopg2-binary sqlalchemy pydantic-settings
+```
