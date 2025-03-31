@@ -36,5 +36,5 @@ pip install uvicorn
 
 ## Install Packages
 ```console
-pip install psycopg2-binary sqlalchemy pydantic-settings
+pip install python-dotenv psycopg2-binary asyncpg sqlalchemy
 ```
