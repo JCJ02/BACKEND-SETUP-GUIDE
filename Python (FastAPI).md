@@ -63,7 +63,7 @@ It is highly recommended to create a virtual environment for your project. This 
 3.  Install the required packages within the activated virtual environment:
 
     ```console
-    pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt
+    pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic pydantic-settings passlib bcrypt
     ```
     `python-dotenv` - For managing environment variables.
     `psycopg2-binary` or `asyncpg` - PostgreSQL database drivers.
