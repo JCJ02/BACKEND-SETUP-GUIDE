@@ -35,23 +35,39 @@ pip install uvicorn
 ```
 
 ## Virtual Environments (Recommended):
-```console
-python -m venv venv
-```
 
-then,
+It is highly recommended to create a virtual environment for your project. This isolates the project dependencies and prevents conflicts with other Python projects.
 
-### On Windows
-```console
-. venv\Scripts\activate
-```
-or
-### On macOS and Linux
-```console
-source venv/bin/activate
-```
+1.  Create a virtual environment:
 
-## Install Packages
-```console
-pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt 
-```
+    ```console
+    python -m venv venv
+    ```
+
+2.  Activate the virtual environment:
+
+    * **On Windows:**
+
+        ```console
+        . venv\Scripts\activate
+        ```
+
+    * **On macOS and Linux:**
+
+        ```console
+        source venv/bin/activate
+        ```
+
+    * **Important:** Make sure your terminal prompt shows `(venv)` before proceeding.
+
+3.  Install the required packages within the activated virtual environment:
+
+    ```console
+    pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt
+    ```
+
+4. Create a requirements file.
+
+    ```console
+    pip freeze > requirements.txt
+    ```
