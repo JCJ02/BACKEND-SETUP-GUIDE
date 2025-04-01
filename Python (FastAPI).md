@@ -38,3 +38,20 @@ pip install uvicorn
 ```console
 pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt 
 ```
+
+## Virtual Environments (Recommended):
+```console
+python -m venv venv
+```
+
+then,
+
+### On Windows
+```console
+. venv\Scripts\activate
+```
+or
+### On macOS and Linux
+```console
+source venv/bin/activate
+```
