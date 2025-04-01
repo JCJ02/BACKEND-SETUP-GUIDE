@@ -36,5 +36,5 @@ pip install uvicorn
 
 ## Install Packages
 ```console
-pip install python-dotenv psycopg2-binary asyncpg sqlalchemy passlib bcrypt 
+pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt 
 ```
