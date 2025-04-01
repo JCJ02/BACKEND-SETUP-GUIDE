@@ -34,11 +34,6 @@ pip install "fastapi[standard]"
 pip install uvicorn
 ```
 
-## Install Packages
-```console
-pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt 
-```
-
 ## Virtual Environments (Recommended):
 ```console
 python -m venv venv
@@ -54,4 +49,9 @@ or
 ### On macOS and Linux
 ```console
 source venv/bin/activate
+```
+
+## Install Packages
+```console
+pip install python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic passlib bcrypt 
 ```
