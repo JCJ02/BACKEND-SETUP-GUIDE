@@ -73,6 +73,12 @@ It is highly recommended to create a virtual environment for your project. This 
     `passlib` - Password hashing.
     `bcrypt` - Password hashing algorithm.
 
+4. Initialize Alembic - The install will add the alembic command to the virtual environment. All operations with Alembic in terms of this specific virtual environment will then proceed through the usage of this command, as in:
+
+    ```console
+    pip install alembic
+    ```
+
 5. Create a requirements file.
 
     ```console
