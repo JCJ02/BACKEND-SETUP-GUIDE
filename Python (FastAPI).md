@@ -49,7 +49,7 @@ It is highly recommended to create a virtual environment for your project. This 
     * **On Windows:**
 
         ```console
-        . venv\Scripts\activate
+        . venv/Scripts/activate
         ```
 
     * **On macOS and Linux:**
