@@ -78,9 +78,21 @@ It is highly recommended to create a virtual environment for your project. This 
     ```console
     alembic init alembic
     ```
+    - You can now generate tables in the alembic by typing this command:
+    ```console
+    alembic revision --autogenerate -m "Added tables"
+    ```
+    and then,
+    ```console
+    alembic upgrade head
+    ```
 
 5. Create a requirements file.
 
     ```console
     pip freeze > requirements.txt
+    ```
+    or
+    ```console
+    pip install -r requirements.txt # If you want to auto reinstall the requirements.txt
     ```
