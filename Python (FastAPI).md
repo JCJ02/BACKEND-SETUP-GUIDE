@@ -27,13 +27,6 @@ C:\Users\<YourUsername>\AppData\Roaming\Python\PythonXX\Scripts\
 - Name it whatever you want, for ex. `fastapi`.
 Organizing your project into a dedicated folder ensures all related files and configurations are in one place, making it easier to manage.
 
-## Open it on Visual Studio Code Software
-- Open your terminal and type `pip install "fastapi[standard]` and `pip install uvicorn` to initialize the package.json file:
-```console
-pip install "fastapi[standard]"
-pip install uvicorn
-```
-
 ## Virtual Environments (Recommended):
 
 It is highly recommended to create a virtual environment for your project. This isolates the project dependencies and prevents conflicts with other Python projects.
@@ -63,13 +56,17 @@ It is highly recommended to create a virtual environment for your project. This 
 3.  Install the required packages within the activated virtual environment:
 
     ```console
-    pip install alembic python-dotenv psycopg-binary psyconpg sqlalchemy pydantic pydantic-settings passlib bcrypt
+    pip install "fastapi[standard]" uvicorn alembic python-dotenv psycopg-binary psycopg sqlalchemy pydantic pydantic-settings passlib bcrypt
     ```
+    - `fastapi[standard]` - FastAPI is a modern, fast (high-performance) web framework for building APIs with Python. It's built on top of Starlette and Pydantic. The [standard] part installs FastAPI along with some useful dependencies like uvicorn (ASGI server) and python-multipart (for handling file uploads).
+    - `uvicorn` - Uvicorn is an ASGI server implementation used to serve FastAPI applications. It is known for its speed and asynchronous nature, making it well-suited for handling multiple requests concurrently.
     - `alembic` - Alembic provides for the creation, management, and invocation of change management scripts for a relational database, using SQLAlchemy as the underlying engine.
     - `python-dotenv` - For managing environment variables.
     - `psycopg-binary` or `asyncpg` - PostgreSQL database drivers.
+    - `psycopg` - psycopg is a PostgreSQL database adapter for Python, similar to psycopg-binary.
     - `sqlalchemy` - SQL toolkit and ORM.
     - `pydantic` - Data validation and settings management.
+    - `pydantic-settings` - pydantic-settings is an extension of Pydantic that provides support for managing application settings.
     - `passlib` - Password hashing.
     - `bcrypt` - Password hashing algorithm.
 
