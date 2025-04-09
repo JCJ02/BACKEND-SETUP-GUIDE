@@ -63,11 +63,11 @@ It is highly recommended to create a virtual environment for your project. This 
 3.  Install the required packages within the activated virtual environment:
 
     ```console
-    pip install alembic python-dotenv psycopg2-binary asyncpg sqlalchemy pydantic pydantic-settings passlib bcrypt
+    pip install alembic python-dotenv psycopg-binary psyconpg sqlalchemy pydantic pydantic-settings passlib bcrypt
     ```
     - `alembic` - Alembic provides for the creation, management, and invocation of change management scripts for a relational database, using SQLAlchemy as the underlying engine.
     - `python-dotenv` - For managing environment variables.
-    - `psycopg2-binary` or `asyncpg` - PostgreSQL database drivers.
+    - `psycopg-binary` or `asyncpg` - PostgreSQL database drivers.
     - `sqlalchemy` - SQL toolkit and ORM.
     - `pydantic` - Data validation and settings management.
     - `passlib` - Password hashing.
