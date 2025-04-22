@@ -56,7 +56,7 @@ It is highly recommended to create a virtual environment for your project. This 
 3.  Install the required packages within the activated virtual environment:
 
     ```console
-    pip install "fastapi[standard]" uvicorn alembic python-dotenv psycopg-binary psycopg sqlalchemy pydantic pydantic-settings passlib bcrypt
+    pip install "fastapi[standard]" uvicorn alembic python-dotenv psycopg-binary psycopg sqlalchemy pydantic pydantic-settings passlib bcrypt pyjwt python-multipart
     ```
     - `fastapi[standard]` - FastAPI is a modern, fast (high-performance) web framework for building APIs with Python. It's built on top of Starlette and Pydantic. The [standard] part installs FastAPI along with some useful dependencies like uvicorn (ASGI server) and python-multipart (for handling file uploads).
     - `uvicorn` - Uvicorn is an ASGI server implementation used to serve FastAPI applications. It is known for its speed and asynchronous nature, making it well-suited for handling multiple requests concurrently.
@@ -69,6 +69,8 @@ It is highly recommended to create a virtual environment for your project. This 
     - `pydantic-settings` - pydantic-settings is an extension of Pydantic that provides support for managing application settings.
     - `passlib` - Password hashing.
     - `bcrypt` - Password hashing algorithm.
+    - `pyjwt` - Refers to the PyJWT library — a module that lets you create, decode, and verify JSON Web Tokens (JWTs).
+    - `python-multipart` - is a library used to parse multipart/form-data in Python web frameworks like FastAPI and Starlette.
 
 4. Initialize Alembic - The install will add the alembic command to the virtual environment. All operations with Alembic in terms of this specific virtual environment will then proceed through the usage of this command, as in:
 
