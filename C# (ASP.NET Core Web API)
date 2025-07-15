@@ -1,0 +1,31 @@
+# Install Packages:
+
+```console
+dotnet tool install --global dotnet-ef
+```
+
+```console
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+
+```console
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+```
+
+```console
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+```
+
+```console
+dotnet add package BCrypt.Net-Next
+```
+
+```console
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+```
+
+```console
+dotnet add package System.IdentityModel.Tokens.Jwt
+```
+
+# Database Migration
