@@ -91,6 +91,12 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 ```
 
+OR
+
+```console
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 8.0.7
+```
+
 <br>
 
 ## 7. System.IdentityModel.Tokens.Jwt
